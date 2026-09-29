@@ -56,33 +56,33 @@ Below is a breakdown of key commercial manufacturing CPQ solutions, sorted by **
 
 The open-source ecosystem provides modular building blocks—ranging from manufacturing ERPs with built-in configurators to standalone pricing engines and JSON logic solvers.
 
-Projects below are sorted by **GitHub Stars (Descending)** 🌟.
+Projects below are sorted by **GitHub_Stars (Descending)** 🌟.
 
-- **[FlexPrice](https://github.com/flexprice/flexprice)** [![GitHub stars](https://img.shields.io/github/stars/flexprice/flexprice?style=social&color=white)](https://github.com/flexprice/flexprice/stargazers)  
+- **[FlexPrice](https://github.com/flexprice/flexprice)** [![GitHub_Stars](https://img.shields.io/github/stars/flexprice/flexprice?style=social&color=white)](https://github.com/flexprice/flexprice/stargazers)  
   Open-source pricing engine and usage-based billing infrastructure. Highly adaptable for complex manufacturing quote calculations, dynamic meter tracking, and tier-based pricing logic. **Apache-2.0**.
 
-- **[Carbon](https://github.com/crbnos/carbon)** [![GitHub stars](https://img.shields.io/github/stars/crbnos/carbon?style=social&color=white)](https://github.com/crbnos/carbon/stargazers)  
+- **[Carbon](https://github.com/crbnos/carbon)** [![GitHub_Stars](https://img.shields.io/github/stars/crbnos/carbon?style=social&color=white)](https://github.com/crbnos/carbon/stargazers)  
   The open-source operating system for manufacturing. Features ERP, MES, QMS, and a built-in **Configure-to-Order (CTO) Product Configurator**. Handles multi-level BoMs, capacity planning, MRP, and MCP client/server integration. **AGPL-3.0**.
 
-- **[OpenMeter](https://github.com/openmeterio/openmeter)** [![GitHub stars](https://img.shields.io/github/stars/openmeterio/openmeter?style=social&color=white)](https://github.com/openmeterio/openmeter/stargazers)  
+- **[OpenMeter](https://github.com/openmeterio/openmeter)** [![GitHub_Stars](https://img.shields.io/github/stars/openmeterio/openmeter?style=social&color=white)](https://github.com/openmeterio/openmeter/stargazers)  
   Real-time metering and pricing calculation engine. Useful for complex manufacturing CPQ implementations requiring real-time usage metrics or dynamic cost calculation. **Apache-2.0**.
 
-- **[Lotus](https://github.com/uselotus/lotus)** [![GitHub stars](https://img.shields.io/github/stars/uselotus/lotus?style=social&color=white)](https://github.com/uselotus/lotus/stargazers)  
+- **[Lotus](https://github.com/uselotus/lotus)** [![GitHub_Stars](https://img.shields.io/github/stars/uselotus/lotus?style=social&color=white)](https://github.com/uselotus/lotus/stargazers)  
   Open-source pricing, packaging, and quote calculation engine. Supports custom pricing rules, plan management, and CRM/payment integrations. **MIT**.
 
-- **[OCA Product Configurator](https://github.com/OCA/product-configurator)** [![GitHub stars](https://img.shields.io/github/stars/OCA/product-configurator?style=social&color=white)](https://github.com/OCA/product-configurator/stargazers)  
+- **[OCA Product Configurator](https://github.com/OCA/product-configurator)** [![GitHub_Stars](https://img.shields.io/github/stars/OCA/product-configurator?style=social&color=white)](https://github.com/OCA/product-configurator/stargazers)  
   Comprehensive Odoo ERP product configurator module. Enables dynamic variant creation, attribute-based price extra charges, and constraint rules for manufacturing lines. **AGPL-3.0**.
 
-- **[datalogic-rs](https://github.com/GoPlasmatic/datalogic-rs)** [![GitHub stars](https://img.shields.io/github/stars/GoPlasmatic/datalogic-rs?style=social&color=white)](https://github.com/GoPlasmatic/datalogic-rs/stargazers)  
+- **[datalogic-rs](https://github.com/GoPlasmatic/datalogic-rs)** [![GitHub_Stars](https://img.shields.io/github/stars/GoPlasmatic/datalogic-rs?style=social&color=white)](https://github.com/GoPlasmatic/datalogic-rs/stargazers)  
   High-performance JSONLogic rule engine with WASM and multi-language bindings. Includes a React visual rule builder for non-engineers to maintain product configuration constraints and fee schedules. **MIT**.
 
-- **[openCPQ](https://github.com/webXcerpt/openCPQ)** [![GitHub stars](https://img.shields.io/github/stars/webXcerpt/openCPQ?style=social&color=white)](https://github.com/webXcerpt/openCPQ/stargazers)  
+- **[openCPQ](https://github.com/webXcerpt/openCPQ)** [![GitHub_Stars](https://img.shields.io/github/stars/webXcerpt/openCPQ?style=social&color=white)](https://github.com/webXcerpt/openCPQ/stargazers)  
   Browser-based client-side product configuration framework. Runs configuration logic directly in JS/TypeScript without requiring server round-trips. **MIT**.
 
-- **[SwiftCPQ](https://github.com/ekky1328/SwiftCPQ)** [![GitHub stars](https://img.shields.io/github/stars/ekky1328/SwiftCPQ?style=social&color=white)](https://github.com/ekky1328/SwiftCPQ/stargazers)  
+- **[SwiftCPQ](https://github.com/ekky1328/SwiftCPQ)** [![GitHub_Stars](https://img.shields.io/github/stars/ekky1328/SwiftCPQ?style=social&color=white)](https://github.com/ekky1328/SwiftCPQ/stargazers)  
   Vendor-agnostic lightweight CPQ proposal and quoting frontend built with Vue.js. **MIT**.
 
-- **[rule-lite](https://github.com/tejas821/rule-lite)** [![GitHub stars](https://img.shields.io/github/stars/tejas821/rule-lite?style=social&color=white)](https://github.com/tejas821/rule-lite/stargazers)  
+- **[rule-lite](https://github.com/tejas821/rule-lite)** [![GitHub_Stars](https://img.shields.io/github/stars/tejas821/rule-lite?style=social&color=white)](https://github.com/tejas821/rule-lite/stargazers)  
   Tiny (~1KB) dependency-free TypeScript JSON rule engine for evaluating conditional logic (AND/OR/NOT) in product configuration forms and feature constraints. **MIT**.
 
 ---
@@ -93,7 +93,7 @@ Contributions are welcome and appreciated! Follow these steps to submit a tool o
 
 1. Fork this repository. 🍴
 2. Edit `README.md` following the tabular or bulleted format. 📝
-3. Provide factual info: name, link, 1–2 sentence description, star counts, and license. 🔗
+3. Provide factual info: name, link, 1–2 sentence description, Stars_Counts, and license. 🔗
 4. Open a Pull Request (PR) with a clear title. 🚀
 
 ---
