@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <!-- Glow Effect -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <style>
+      .title { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 42px; fill: #ffffff; }
+      .subtitle { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 20px; fill: #94a3b8; }
+      .tag { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 14px; fill: #38bdf8; }
+      
+      /* Dynamic / Animated elements */
+      @keyframes pulseNode {
+        0%, 100% { transform: scale(1); opacity: 0.8; }
+        50% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 12px #38bdf8); }
+      }
+      @keyframes floatPill {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      @keyframes dashFlow {
+        to { stroke-dashoffset: -40; }
+      }
+      .node { transform-box: fill-box; transform-origin: center; animation: pulseNode 3s infinite ease-in-out; }
+      .node-delayed { transform-box: fill-box; transform-origin: center; animation: pulseNode 3s infinite ease-in-out 1.5s; }
+      .pill { transform-box: fill-box; transform-origin: center; animation: floatPill 4s infinite ease-in-out; }
+      .flow-line { stroke-dasharray: 8 8; animation: dashFlow 2s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Dark Background -->
+  <rect width="1200" height="400" rx="16" fill="url(#bgGrad)"/>
+  <rect width="1200" height="400" rx="16" fill="none" stroke="#334155" stroke-width="2"/>
+
+  <!-- Background Decorative Dynamic Diagram (Positioned on sides/background so title stays crisp) -->
+  <g opacity="0.35">
+    <!-- CPQ Workflow Dynamic Lines -->
+    <path class="flow-line" d="M 150 320 Q 300 280 450 320 T 750 320 T 1050 320" fill="none" stroke="#38bdf8" stroke-width="3"/>
+    <path class="flow-line" d="M 100 80 Q 350 120 600 80 T 1100 80" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+
+    <!-- Decorative Nodes -->
+    <circle cx="150" cy="320" r="16" fill="#1e293b" stroke="#38bdf8" stroke-width="3" class="node"/>
+    <circle cx="450" cy="320" r="16" fill="#1e293b" stroke="#8b5cf6" stroke-width="3" class="node-delayed"/>
+    <circle cx="750" cy="320" r="16" fill="#1e293b" stroke="#ec4899" stroke-width="3" class="node"/>
+    <circle cx="1050" cy="320" r="16" fill="#1e293b" stroke="#10b981" stroke-width="3" class="node-delayed"/>
+  </g>
+
+  <!-- Foreground Content Block -->
+  <!-- Top Accent Bar -->
+  <rect x="80" y="70" width="1040" height="6" rx="3" fill="url(#accentGrad)"/>
+
+  <!-- Category Tag / Badge -->
+  <g class="pill">
+    <rect x="80" y="100" width="340" height="34" rx="17" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+    <text x="95" y="122" class="tag">⚙️ CONFIGURE • 💲 PRICE • 📄 QUOTE</text>
+  </g>
+
+  <!-- Main Title -->
+  <text x="80" y="195" class="title">Awesome Configure-Price-Quote (CPQ)</text>
+  <text x="80" y="240" class="title" fill="#38bdf8">For Manufacturing 🏭</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="290" class="subtitle">A curated index of enterprise SaaS platforms, open-source rule engines &amp; pricing tools.</text>
+
+  <!-- Bottom Dynamic Status Pill -->
+  <g transform="translate(80, 325)">
+    <rect width="480" height="30" rx="6" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <circle cx="20" cy="15" r="5" fill="#10b981"/>
+    <text x="35" y="20" font-family="system-ui, sans-serif" font-size="13" fill="#cbd5e1" font-weight="500">Curated SaaS &amp; Open-Source Ecosystem • Updated 2026</text>
+  </g>
+</svg>
